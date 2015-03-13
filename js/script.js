@@ -1,16 +1,29 @@
-var divs = document.getElementsByClassName('alert');
-for(var i=0; i<divs.length; i++) {
-  divs[i].addEventListener("click", highlightThis);
-  /*
-  divs[i].addEventListener("click", highlightThis, true);
-  divs[i].addEventListener("click", highlightThis, false);*/
-}
+$(document).ready(function(){
 
-function highlightThis(event) {
-    //event.stopPropagation();
-  
-    var backgroundColor = this.style.backgroundColor;
-    this.style.backgroundColor='yellow';
-    alert(this.className);
-    this.style.backgroundColor=backgroundColor;
-}
+    $(window).scroll(function(){
+        var a = $(window).scrollTop();
+        if(a>0){
+            $("#nav-bar").animate({height: "50px"},100);
+            $(".title").animate({ fontSize: "10px" }, 100 );
+        }else {
+            $("#nav-bar").animate({height: "80px"},100);
+            $(".title").animate({fontSize: "20px"},100);
+
+        }
+    });
+
+
+
+    $(document).foundation({
+
+        orbit: {
+            animation: 'fade'
+
+
+
+        }
+
+
+    });
+
+});

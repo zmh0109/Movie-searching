@@ -1,0 +1,191 @@
+@import url('http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+@import url('http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css');
+
+
+.header{
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.clickable:hover {
+  cursor: pointer;
+}
+
+#background{
+
+  width:100%;
+  height:100%;
+  position:fixed;
+
+  z-index:-1
+}
+.genre{
+
+  text-align: center;
+  color: white;
+  height: 20px;
+  background-color: gray;
+  vertical-align: middle;
+}
+
+.genre.active{
+  background-color: black;
+}
+
+.para{
+  color: white;
+}
+
+.ggg{
+  margin-top: 20px;
+  background-color: white;
+}
+#back{
+  background-color: white;
+
+}
+
+.genre:hover{
+  cursor:pointer;
+}
+
+.search{
+  width: 600px;
+  background-color:gold;
+}
+
+.searchResult{
+  width: 600px;
+}
+
+.searchInput{
+  margin-top: 20px;
+  margin-left: 10%;
+  height: 40px;
+  font-size: 30px;
+  font-family: "Times New Roman";
+  color: #00CF84;
+  width: 70%;
+}
+
+#nav-bar{
+  background-color: black;
+
+
+}
+#sort{
+  float: left;
+  margin-left: 20%;
+  font-family: "Times New Roman";
+  margin-bottom: 2px;
+}
+
+#ord{
+  float: left;
+
+  font-family: "Times New Roman";
+  margin-bottom: 2px;
+}
+.select{
+  font-family: "Times New Roman";
+  float: left;
+  margin-top: 2px;
+  margin-left: 20%;
+  width: 70%;
+}
+
+form#myForm{
+  float: left;
+  padding-left: 20%;
+}
+.inputRadio{
+  width: 20px;
+}
+
+.movieList{
+  background-color: lightcyan;
+  height: 180px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  border-bottom: 1px;
+  border-bottom-style: dotted;
+}
+
+.info{
+  margin: 20px;
+  font-family: "Times New Roman";
+  float: left;
+}
+
+.paragraph{
+  margin: 10px;
+  float: left;
+  color: #000000;
+}
+
+.p2{
+  color: black;
+}
+
+.thumb{
+  float: left;
+  margin: 20px;
+  height: 150px;
+  width: 100px;
+}
+
+.arrow{
+  margin-top: 20px;
+  background-color:white;
+  height: 50px;
+}
+
+.detail{
+
+  background-color:white;
+  height: 600px;
+
+}
+
+#leftGo{
+  float: left;
+  margin-left: 20px;
+}
+
+#rightGo{
+  float: right;
+  margin-right: 20px;
+}
+
+.title{
+  color:white;
+  font-size: 2em;
+}
+.detailImg{
+  margin-top: 50px;
+  margin-right: 60px;
+  padding-bottom: 0;
+  padding-top: 0;
+  width: 300px;
+}
+
+.detailImg#Idontkonw{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.detailInfo{
+  font-family: "Times New Roman";
+  font-size: 20px;
+  padding-top: 40px;
+  margin-top: 0px;
+  text-align: left;
+  padding-right: 5px;
+  background-color:white;
+  padding-bottom: 10px;
+}

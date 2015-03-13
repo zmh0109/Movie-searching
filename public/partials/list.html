@@ -1,0 +1,55 @@
+<div data-magellan-expedition="fixed" id = "nav-bar" data-magellan-destination="search-title">
+
+    <div class="sub-nav" >
+        <dl class="right" >
+            <dd data-magellan-arrival='search-title' ><a href="#/list" class="title">Search</a></dd>
+            <dd data-magellan-arrival='gallery-title' ><a href="#/gallery" class="title">Gallery</a></dd>
+
+        </dl>
+    </div>
+</div>
+
+<div class="row" >
+    <a name="search-title"></a>
+    <div class="small-12 medium-12 large-12 columns text-center"><h1 class="para">IMDB Top 250 Movie</h1></div>
+
+</div>
+
+<div class="row">
+    <div class="small-12 medium-12 large-12 columns text-center search">
+        <input  ng-model="query" placeholder="Movie Name" class="searchInput">
+        <br>
+        <p id="sort">Sort By:</p>
+        <select ng-model="orderProp" class = "select">
+            <option value="rank">Rank</option>
+            <option value="title">Title</option>
+        </select>
+        <br>
+
+        <form name="myForm" id="myForm">
+            <p id="ord">Order By:</p>
+            <input class ="inputRadio" type="radio" name="order" ng-click="reverse=false" checked="checked"/>Ascending
+            <input class ="inputRadio" type="radio" name="order" ng-click="reverse=true"/>Descending<br/>
+        </form>
+    </div>
+</div>
+
+
+
+<div class="row">
+    <div class="small-12 medium-12 large-12 columns text-center searchResult" ng-show="query != ''" ng-repeat="movie in movies|orderBy: orderProp:reverse|filter:query" >
+        <div class="movieList">
+            <div>
+                <a href="#/details/{{movie.rank}}"><img class="thumb" ng-src="data/images/{{movie.imdbID+'.jpg'}}">
+                </a>
+            </div>
+            <div class="info">
+                <p class = "paragraph"><a href="#/details/{{movie.rank}}">{{movie.title}}</a></p><br>
+                <br><p class = "paragraph">Rank:{{movie.rank}}</p><br>
+                <br><p class = "paragraph">Year:{{movie.released}}</p><br>
+
+            </div>
+        </div>
+    </div>
+</div>
+

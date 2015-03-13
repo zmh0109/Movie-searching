@@ -2,59 +2,163 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>MP2 Starter</title>
+  <title>MP2 </title>
   <script src="./lib/angular/angular.min.js"></script>
   <script src="./js/controllers.js"></script>
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./foundation/css/foundation.css">
-  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 
-
 <body>
 
-	<nav class="top-bar" data-topbar role="navigation">
-	  <ul class="title-area">
-	    <li class="name">
-	      <h1><a href="#">MP2</a></h1>
-	    </li>
-	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-	    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-	  </ul>
-
-	  <section class="top-bar-section">
-	    <!-- Left Nav Section -->
-	    <ul class="left">
-	      <li><a href="https://courses.engr.illinois.edu/cs498rk1/index.html">CS498RK</a></li>
-	    </ul>
-	  </section>
-	</nav>
-
-	<div class="row" ng-app = "demoApp">
-		<div class="panel small-centered columns small-12 medium-4">
-    	<input id="nameInput" ng-model="name" placeholder="Your Name" autofocus>
-	
-		<h3>Hello, {{name}}</h3>
-
-		</div>
-	</div>
-	<div class="row">
-		<div class="alert columns small-12 large-6">
-			<div><img src="http://lorempixel.com/400/200/cats" /></div>
-
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit velit temporibus, fugit recusandae aliquid officiis molestias possimus reprehenderit quos. Facere dolores, nulla optio recusandae. Voluptatibus aut esse nulla saepe sit ut amet, neque officia officiis quam ea ex adipisci, quaerat, eligendi veniam iste temporibus. Aperiam ea quos fugiat provident, voluptatum reiciendis mollitia voluptates, odio quam at, deserunt animi voluptas odit aliquid saepe voluptate distinctio excepturi. Deserunt, id esse fuga cum accusantium eos obcaecati odit veritatis molestias illum sequi repellat, quisquam quasi architecto velit blanditiis perferendis, nulla eligendi non laboriosam. Eligendi sint, voluptatem ipsam dolore eum temporibus dicta, quaerat ea molestias placeat, asperiores minima sit explicabo! Repellat qui ducimus ipsum. Dignissimos at, aliquid vitae asperiores omnis provident voluptatibus, itaque delectus. Porro corrupti vel culpa, delectus in doloremque nam ratione aliquid ullam non iusto magnam, repudiandae, magni a quasi voluptatum inventore exercitationem quibusdam sint autem totam ex quia possimus. Similique ad fugiat eligendi magnam ab, ex nulla unde eos, tempora quis consequatur maxime inventore perferendis voluptatem non nam dignissimos voluptatum dolor quasi quidem molestias maiores doloribus. Omnis ipsa fugit amet! Eum repellat deleniti fuga omnis in maiores rem iusto, qui quasi ipsum illum odit laudantium molestiae, nostrum ipsam fugit animi atque! Non.
-		</div>
-		<div class="columns small-12 large-6">
-	  	<div><img src="http://lorempixel.com/400/200/nature" />	</div>
-	  	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nobis facere sint placeat necessitatibus reprehenderit amet quas minima beatae illo nemo labore, maxime adipisci, accusamus voluptates repudiandae quia, ut excepturi ea quis obcaecati molestias error architecto unde? Hic vel facere porro magnam ipsam omnis eos ducimus, architecto velit beatae modi natus sunt suscipit quo optio qui repellat, blanditiis consequuntur. Fuga omnis porro quis inventore in voluptatum veritatis illum beatae rem. Labore nam saepe cupiditate quod, itaque quidem libero, quas tempore incidunt, quos earum repudiandae recusandae quia voluptas ducimus inventore, expedita. Alias minima, commodi aut, aspernatur laborum quae mollitia pariatur suscipit ad accusamus a ipsam fuga necessitatibus voluptas esse error reprehenderit provident. Sequi architecto ipsum qui enim labore sunt incidunt ullam pariatur. Minus porro error ipsa perferendis exercitationem debitis dicta asperiores nostrum cum voluptas qui dolores odit numquam incidunt cumque eos nemo architecto repudiandae adipisci, eius ut, aut suscipit minima perspiciatis consectetur. Ratione quisquam neque voluptatem? Qui, aspernatur iste quaerat iure. Debitis nobis minus animi mollitia libero temporibus perferendis ratione, inventore ullam, eos ut porro, velit quibusdam rerum possimus, ex! Quidem consectetur obcaecati ad veritatis. Velit illum aliquid tenetur, nisi illo quaerat labore nemo id sequi eveniet consequuntur. Voluptate, similique, rem!</div>
-	</div>
- 
 
 
-  <script src="./js/script.js"></script>
+<div data-magellan-expedition="fixed" id = "nav-bar">
+    <div class="sub-nav" >
+        <dl class="right" >
+            <dd data-magellan-arrival='intro-title' ><a href="#intro-title" class="title">Intro</a></dd>
+            <dd data-magellan-arrival='news-title'  ><a href="#news-title" class="title">News</a></dd>
+            <dd data-magellan-arrival='video-title' ><a href="#video-title" class="title">Video</a></dd>
+            <dd data-magellan-arrival='heros-title' ><a href="#heros-title" class="title">Heros</a></dd>
+        </dl>
+    </div>
+</div>
+
+
+
+
+<div  class="main-title" id="header">
+
+      <p class="v-center-header" > Hearthstone: Heros of Warcraft</p>
+
+</div>
+
+<div class="row" id="intro" data-magellan-destination="intro-title">
+    <div class="small-12 large-12 columns" >
+        <a name="intro-title"></a>
+        <h3 class="para">Intro</h3>
+        <p class="para">
+        <b> Hearthstone: Heroes of Warcraft </b> is a digital collectible card game (CCG) developed by Blizzard Entertainment.It is a
+        free-to-play with unlimited paid booster packs, and limited (by daily cap and randomized objective provision) free
+        acquisition of in-game currency used to obtain booster packs. Announced at the Penny Arcade Expo in March 2013, the game
+        was released on 11 March 2014. Hearthstone is available on Microsoft Windows and OS X systems and on iPad, Android tablet
+        and Windows 8 Touch devices
+        </p>
+    </div>
+</div>
+
+<div class="row" id="news" data-magellan-destination="news-title">
+    <a name="news-title"></a>
+    <h3 class="para" >News</h3>
+    <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3" id="space">
+        <li class="para">
+            Take heart, young one, theHearthstone World Championship is near! Soon, 16 of the most skilled card-slingers from all over the world will gather together
+            to duel for a treasure trove of $250,000. Players from the Americas, Europe, China, Korea, and Taiwan have been placed in four different groups, with each
+            player vying for a spot within the Top 8 finalists!
+        </li>
+        <li class="para">
+            The Hearthstone World Championship begins on November 2nd and 3rd at 10:00 a.m. PST at ESL’s Burbank Studio. Community casters Dan “Artosis” Stemkoski,
+            We also have additional streams for those looking to watch the Hearthstone World Championship in other languages.
+        </li>
+        <li class="para">
+            The Road to BlizzCon concludes on November 7th and 8th at BlizzCon 2014, where the remaining 12 players will duel for a chance at Hearthstone glory.
+            Marcus "djWheat" Graham and Rachel "Seltzer" Quirico will be on hand to interview players, while Marcin "Gnimsh" Filipowicz, Dan "Frodan" Chou,
+            Jason "Amaz" Chan, Ryan "Realz" Masterson and Nathan "ThatsAdmirable" Zamora add insightful and entertaining commentary!
+        </li>
+
+    </ul>
+</div>
+
+
+
+<div class="flex-video widescreen vimeo" id = "video" data-magellan-destination="video-title">
+    <a name="video-title"></a>
+    <iframe src="./data/video.mp4" width="100" height="200" frameborder="0"  allowFullScreen></iframe>
+
+</div>
+
+
+<div class="row" data-magellan-destination="heros-title" id="heros" >
+         <div class="large-8 small-12 columns large-centered small-centered" >
+             <a name="heros-title"></a>
+               <ul data-orbit >
+                   <li data-orbit-slide="headline-1">
+                     <img src="./data/1.jpg" alt="slide 1" style="width:800px;height:500px">
+
+                   </li>
+                   <li class="active" data-orbit-slide="headline-2">
+                      <img src="./data/4.jpg" alt="slide 2" style="width:800px;height:500px">
+
+                   </li>
+                   <li  data-orbit-slide="headline-3">
+                       <img src="./data/6.jpg" alt="slide 3" style="width:800px;height:500px">
+
+                   </li>
+
+               </ul>
+             <a href="#" data-reveal-id="myModal"><span id="information">Click  For More Information</span></a>
+
+         </div>
+
+
+</div>
+
+
+<div>
+  <img src="./data/back_1.jpg" id = "back_1" >
+  <!--<img src="./data/back_2.jpg" id = "back_2" >-->
+</div>
+
+
+
+
+
+
+
+<div id="myModal" class="reveal-modal" data-reveal>
+    <h2>Slide information</h2>
+    <p class="lead">Just Click the left and right bottom on the image to filp on laptop and click the silde itself to filp over on mobile devices</p>
+
+    <a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div class="row" >
+    <div class="large-1  medium-2 small-4 columns small-centered large-centered " id="animation">
+
+            <a href="http://us.battle.net/hearthstone/en/" > <span id="play">Play Now  </span></a>
+    </div>
+</div>
+
+<div class="row" >
+    <div class="large-1  medium-2 small-4 columns small-centered large-centered " >
+               <i class="fa fa-cog fa-spin" id="vector"></i>
+    </div>
+</div>
+
+<div class="row" >
+    <div class="large-2 medium-2 small-4 columns large-offset-11 small-offset-8 " >
+      <a href="https://www.facebook.com/Hearthstone"><img src="./data/facebook.jpg" id = "facebook"  ></a>
+        <a href="https://twitter.com/playhearthstone"><img src="./data/twitter.jpg" id = "twitter" ></a>
+    </div>
+</div>
+<div  id="footer">
+
+    <p class="v-center-footer">  Created By Minhao Zhan, Grad student Computer Science @ University of Illinois Urbana-Champaign</p>
+
+</div>
+
   <script src="./lib/jquery-2.1.3.min/index.js"></script>
   <script src="./foundation/js/foundation.min.js"></script>
+  <script src="./foundation/js/foundation/foundation.js"></script>
+  <script src="./foundation/js/foundation/foundation.magellan.js"></script>
+  <script src="./foundation/js/foundation/foundation.orbit.js"></script>
+  <script src="./foundation/js/foundation/foundation.interchange.js"></script>
+  <script src="./foundation/js/foundation/foundation.topbar.js"></script>
+  <script src="./foundation/js/foundation/foundation.reveal.js"></script>
+  <script src="./js/script.js"></script>
   <script src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>

@@ -1,0 +1,41 @@
+
+    <div data-magellan-expedition="fixed" id = "nav-bar">
+        <div class="sub-nav" >
+            <dl class="right" >
+                <dd data-magellan-arrival='search-title' ><a href="#/list" class="title">Search</a></dd>
+                <dd data-magellan-arrival='gallery-title'  ><a href="#/gallery" class="title">Gallery</a></dd>
+
+            </dl>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-12 medium-12 large-12 columns text-center"><h1 class="para">IMDB Top 250 Movie</h1></div>
+
+    </div>
+
+
+
+    <div class="row">
+        <div class="small-12 medium-12 large-12 columns text-center arrow">
+            <div id="leftGo"><a href="#/details/{{movie.rank-1}}">PREV</a></div>
+            <div id="rightGo"><a href="#/details/{{movie.rank+1}}">NEXT</a></div>
+        </div>
+    </div>
+
+    <div class="row detail">
+        <div class="small-12 medium-6 large-6 columns detailInfo">
+            {{movie.title}}<br>
+            Rank: {{rank}}<br>
+            Year: {{movie.released}}<br>
+            Runtime: {{movie.runtime}}<br>
+            <br>
+            Main plot:<br>
+            {{movie.plot}}<br>
+
+        </div>
+
+        <div class="small-12 medium-6 large-4 columns detailImg">
+            <img class="Idontknow" id="Idontknow" ng-src="data/images/{{movie.imdbID+'.jpg'}}">
+        </div>
+    </div>
